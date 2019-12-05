@@ -17,7 +17,9 @@ const Layout = ({children}) => {
   return (
     <div className='page-wrap'>
       <Header />
-      {children}
+        <div className='content-wrap'>
+          {children}
+        </div>
       <Footer />
     </div>
   )

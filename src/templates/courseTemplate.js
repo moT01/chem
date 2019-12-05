@@ -7,6 +7,7 @@ class CourseTemplate extends Component {
   render() {
     console.log(this.props);
     const course = this.props.data.contentfulCourse;
+    const labs = course.labsForThisCourse || [];
 
     return (
       <Layout>
@@ -15,12 +16,12 @@ class CourseTemplate extends Component {
         <h1>
           Labs
         </h1>
-        {course.labsForThisCourse.length > 1 ? course.labsForThisCourse.map((lab, index) => (
+        {labs.map((lab, index) => (
           <Link to={lab.slug} className='course-row' key={index}>
             <span className='course-name'>{lab.title}</span>
             <span className='course-semester'>{lab.date}</span>
           </Link>
-        )): null }
+        ))}
       </Layout>
     )
   }
