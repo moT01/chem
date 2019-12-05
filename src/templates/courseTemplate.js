@@ -20,7 +20,7 @@ class CourseTemplate extends Component {
             <span className='course-name'>{lab.title}</span>
             <span className='course-semester'>{lab.date}</span>
           </Link>
-        ))}
+        )): null }
       </Layout>
     )
   }
