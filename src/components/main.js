@@ -32,10 +32,10 @@ const Main = () => {
 
   return (
     <section id='main-courses'>
-      <h2 className='main-course-h2'>Courses</h2>
+      <h2>Courses</h2>
       {courses.map((course, index) => (
         <Link to={course.id} className='main-course-row' key={index}>
-          <span className='main-course-name'>{course.classCode} | {course.classTitle}</span>
+          <span className='main-course-name'>{course.classCode} <span className='main-course-pipe'>|</span> {course.classTitle}</span>
           <span className='main-course-semester'>{course.semester}</span>
         </Link>
       ))}

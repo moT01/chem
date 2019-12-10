@@ -1,15 +1,9 @@
-/*@font-face {
-  font-family: "Viga";
-  src: url("../assets/fonts/Viga-Regular.tff");
-}*/
-
 :root {
 	--purple: rgb(98, 63, 153);  /* #623f99 */
 	--yellow: rgb(255, 194, 14); /* #ffc20e */
 }
 
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -25,28 +19,26 @@ body {
   position: relative;
   min-height: 100vh;
 }
-  /*background: url(../images/853490.jpg);
-}
-
-div::after {
-  content: "";
-  background-color: white;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}*/
 
 .content-wrap {
-  margin: 0 150px 0 150px;
-  padding-bottom: 80px;
+  margin: 0 200px 0 200px;
+  padding: 20px 0 80px 0;
 }
 
-/*
-article,
+@media (max-width: 1000px) {
+  .content-wrap {
+    margin: 0 50px 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-wrap {
+    margin: 0 5px 0 5px;
+    padding: 5px 0 80px 0;
+  }
+}
+
+/*article,
 aside,
 details,
 figcaption,
@@ -657,5 +649,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
-*/
+}*/
