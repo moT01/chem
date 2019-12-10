@@ -4,22 +4,22 @@ const { createFilePath } = require(`gatsby-source-filesystem`);
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
 
-  const courseTemplate = path.resolve(`./src/templates/courseTemplate.js`);
-  const labTemplate = path.resolve(`./src/templates/labTemplate.js`);
+  const courseTemplate = path.resolve(`./src/components/courseTemplate.js`);
+  const labTemplate = path.resolve(`./src/components/labTemplate.js`);
 
   const result = await graphql(`
     {
       allContentfulCourse {
         edges {
           node {
-            slug
+            id
           }
         }
       }
       allContentfulLab {
         edges {
           node {
-            slug
+            id
           }
         }
       }
@@ -35,27 +35,21 @@ exports.createPages = async ({ graphql, actions }) => {
   const labs = result.data.allContentfulLab.edges;
  
   courses.forEach(course => {
-    /*const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;*/
-
     createPage({
-      path: course.node.slug,
+      path: course.node.id,
       component: courseTemplate,
       context: {
-        slug: course.node.slug,
+        id: course.node.id,
       },
     });
   });
 
   labs.forEach(lab => {
-    /*const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;*/
-
     createPage({
-      path: lab.node.slug,
+      path: lab.node.id,
       component: labTemplate,
       context: {
-        slug: lab.node.slug,
+        id: lab.node.id,
       },
     });
   });

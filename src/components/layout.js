@@ -1,21 +1,14 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import React from 'react';
 
-import React from 'react'
-import PropTypes from 'prop-types'
-
-import Header from './header'
-import Footer from './footer'
-import './layout.css'
-
+import Header from './header';
+import Head from './head';
+import Footer from './footer';
+import './layout.css';
 
 const Layout = ({children}) => {
   return (
     <div className='page-wrap'>
+      <Head />
       <Header />
         <div className='content-wrap'>
           {children}
@@ -24,9 +17,5 @@ const Layout = ({children}) => {
     </div>
   )
 }
-
-/*Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}*/
 
 export default Layout

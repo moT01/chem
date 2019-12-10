@@ -1,6 +1,11 @@
+/*@font-face {
+  font-family: "Viga";
+  src: url("../assets/fonts/Viga-Regular.tff");
+}*/
+
 :root {
-	--purple: rgb(98, 63, 153);
-	--yellow: rgb(255, 194, 14);
+	--purple: rgb(98, 63, 153);  /* #623f99 */
+	--yellow: rgb(255, 194, 14); /* #ffc20e */
 }
 
 html {
@@ -8,6 +13,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -19,9 +25,24 @@ body {
   position: relative;
   min-height: 100vh;
 }
+  /*background: url(../images/853490.jpg);
+}
+
+div::after {
+  content: "";
+  background-color: white;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}*/
 
 .content-wrap {
-  padding-bottom: 60px;
+  margin: 0 150px 0 150px;
+  padding-bottom: 80px;
 }
 
 /*

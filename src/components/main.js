@@ -1,9 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
+import React from 'react';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
-import Courses from './courses'
-import './main.css'
+import './main.css';
 
 const Main = () => {
   const data = useStaticQuery(graphql`
@@ -11,8 +9,9 @@ const Main = () => {
       allContentfulCourse {
         edges {
           node {
-            slug
-            name
+            id
+            classCode
+            classTitle
             semester
           }
         }
@@ -22,21 +21,26 @@ const Main = () => {
   
   const courses = data.allContentfulCourse.edges.map(edge => {
     return {
-      slug: edge.node.slug,
-      name: edge.node.name,
+      id: edge.node.id,
+      classCode: edge.node.classCode,
+      classTitle: edge.node.classTitle,
       semester: edge.node.semester
     };
+  }).sort((courseA, courseB) => { 
+    return courseA.classCode < courseB.classCode ? -1 : courseA.classCode > courseB.classCode ? 1 : 0 
   });
 
   return (
-    <>
-      <Courses courses={courses} />
-    </>
+    <section id='main-courses'>
+      <h2 className='main-course-h2'>Courses</h2>
+      {courses.map((course, index) => (
+        <Link to={course.id} className='main-course-row' key={index}>
+          <span className='main-course-name'>{course.classCode} | {course.classTitle}</span>
+          <span className='main-course-semester'>{course.semester}</span>
+        </Link>
+      ))}
+    </section>
   );
 }
-
-/*Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}*/
 
 export default Main;

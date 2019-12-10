@@ -1,9 +1,11 @@
-import React from "react"
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
+
+import './courses.css';
 
 const Courses = (props) => (
 	<section id='courses'>
-	  <h2>COURSES</h2>
+	  <h2 class='course-h2'>COURSES</h2>
 		{props.courses.map((course, index) => (
 			<Link to={course.slug} className='course-row' key={index}>
 				<span className='course-name'>{course.name}</span>
