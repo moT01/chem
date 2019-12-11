@@ -24,7 +24,11 @@ class LabTemplate extends Component {
         ) : null*/}
 
         {pdfContent !== null ? (
-          <h2><a href={'https://' + pdfContent[0].file.url}>View Lab</a></h2>
+          <h2>
+            <a href={'https://' + pdfContent[0].file.url} target='_blank' rel='noopener noreferrer'>
+              View Lab
+            </a>
+          </h2>
         ) : null}
 
         {htmlContent !== null ? (
