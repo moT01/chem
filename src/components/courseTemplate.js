@@ -10,7 +10,6 @@ class CourseTemplate extends Component {
     const {
       classCode,
       classTitle,
-      semester,
       contentBeforeLabTable,
       labsForThisCourse = [],
       contentAfterLabTable
@@ -20,26 +19,23 @@ class CourseTemplate extends Component {
       <Layout>
         <section>
           <div className='courseTemplate-title-wrap'>
-            <h2 className='courseTemplate-title'>{classCode} | {classTitle}</h2>
+            <h2 className='courseTemplate-title'>{classCode} <span className='pipe'>|</span> {classTitle}</h2>
           </div>
-
-          <div className='courseTemplate-semester'>{semester}</div>
 
           {contentBeforeLabTable !== null ? (
             <div dangerouslySetInnerHTML={{ __html: contentBeforeLabTable.childContentfulRichText.html }} />
           ) : null}
 
           {labsForThisCourse !== null ? (
-            <h2 className='courseTemplate-h2'>Lab Schedule</h2>
-          ) : null }
-
-          {labsForThisCourse !== null ? (
-            labsForThisCourse.map((lab, index) => (
-              <Link to={lab.id} className='courseTemplate-lab-row' key={index}>
-                <span className='courseTemplate-lab-name'>{lab.title}</span>
-                <span className='courseTemplate-lab-semester'>{lab.date}</span>
-              </Link>
-            ))
+            <div className='courseTemplate-lab-wrap'>
+              <h3 className='courseTemplate-h2'>Lab Schedule</h3>
+              {labsForThisCourse.map((lab, index) => (
+                <Link to={lab.id} className='courseTemplate-lab-row' key={index}>
+                  <span className='courseTemplate-lab-name'>{lab.title}</span>
+                  <span className='courseTemplate-lab-semester'>{lab.date}</span>
+                </Link>
+              ))}
+            </div>
           ) : null }
 
           {contentAfterLabTable !== null ? (

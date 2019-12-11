@@ -7,8 +7,6 @@ import './labTemplate.css'
 
 class LabTemplate extends Component {
   render() {
-    console.log(this.props);
-
     const {
       title,
       date,
@@ -18,11 +16,15 @@ class LabTemplate extends Component {
 
     return (
       <Layout>
-        <h2>title</h2>
-        <h2>date</h2>
-        
+        <h2>{title}</h2>
+        <h2>{date}</h2>
+
+        {/*pdfContent !== null ? (
+          <iframe src={pdfContent[0].file.url} className='pdf-content'></iframe>
+        ) : null*/}
+
         {pdfContent !== null ? (
-          <iframe src={pdfContent.file.url}></iframe>
+          <h2><a href={'https://' + pdfContent[0].file.url}>View Lab</a></h2>
         ) : null}
 
         {htmlContent !== null ? (
@@ -38,11 +40,7 @@ LabTemplate.propTypes = {
     contentfulLab: PropTypes.shape({
       title: PropTypes.string.isRequired,
       date: PropTypes.string.isRequired,
-      pdfContent: PropTypes.shape({
-        file: PropTypes.shape({
-          url: PropTypes.string
-        })
-      }),
+      pdfContent: PropTypes.array,
       htmlContent: PropTypes.shape({
         childContenfulRichText: PropTypes.shape({
           html: PropTypes.string

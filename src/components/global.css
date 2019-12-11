@@ -1,3 +1,8 @@
+:root {
+	--purple: rgb(98, 63, 153);  /* #623f99 */
+	--yellow: rgb(255, 194, 14); /* #ffc20e */
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 1vw 0;
 	padding: 0 0;
@@ -14,11 +19,11 @@ h2 {
 }
 
 h3 {
-	font-size: calc(15px + 1.6vw);
+	font-size: calc(14px + 1.5vw);
 }
 
 h4 {
-	font-size: calc(14px + 1.4vw);
+	font-size: calc(14px + 1.2vw);
 }
 
 h5 {
@@ -39,4 +44,8 @@ h6 {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: calc(11px + .2vw);
 	padding: calc(5px + .2vw) calc(10px + .2vw);
+}
+
+.pipe {
+	color: var(--yellow);
 }

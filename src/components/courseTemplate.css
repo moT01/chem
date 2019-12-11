@@ -1,18 +1,18 @@
-.courseTemplate-name-wrap {
+.courseTemplate-title-wrap {
+	margin-bottom: 40px;
 	text-align: center;
 }
 
-.courseTemplate-name {
-	text-align: center;
-	display: inline-block;
-	border-right: 2px solid black;
-	border-left: 2px solid black;
-	font-family: 'Times New Roman', Times, serif;
-	font-weight: 100;
-	font-size: 40px;
-	letter-spacing: 2.5px;
-	padding-left: 15px;
-	padding-right: 15px;
+.courseTemplate-title {
+	color: var(--purple);
+	border-bottom: 1px solid black;
+	margin: 10px 0;
+	padding-bottom: 10px;
+}
+
+.courseTemplate-lab-wrap {
+	margin-top: calc(20px + 2vw);
+	margin-bottom: calc(20px + 2vw);
 }
 
 .courseTemplate-lab-row {
