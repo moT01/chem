@@ -1,9 +1,10 @@
-.header {
-	width: 100%;
+.header-wrap {
+	width: 85%;
+	padding: 0 10% 0 5%;
 	height: 50px;
 	background-color: rgb(98, 63, 153);
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 }
 
@@ -11,3 +12,18 @@
 	color: rgb(255, 194, 14);
 	font-size: 20px;
 }
+
+.header-links-wrap {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.header-link {
+	font-family: 'Ubuntu-light';
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
