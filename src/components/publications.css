@@ -1,0 +1,8 @@
+.publications-content {
+  font-size: calc(10px + 0.5vw);
+}
+
+.publications-content > ol {
+	position: relative;
+	left: -10px;
+}

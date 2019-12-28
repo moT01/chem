@@ -29,7 +29,7 @@ const Publications = () => {
         <h2>Publications</h2>
 
 				{publicationList !== null ? (
-          <div dangerouslySetInnerHTML={{ __html: publicationList }} />
+          <div className='publications-content' dangerouslySetInnerHTML={{ __html: publicationList }} />
         ) : null}
       </section>
     </>
