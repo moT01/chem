@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
-import Layout from './layout';
+import Layout from '../layout/layout';
 import './courseTemplate.css';
 
 class CourseTemplate extends Component {

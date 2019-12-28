@@ -63,7 +63,7 @@ module.exports = {
         background_color: `#623f99`,
         theme_color: `#ffc20e`,
         display: `minimal-ui`,
-        icon: `src/assets/images/chemLogo.svg`, // This path is relative to the root of the site.
+        icon: `src/assets/icons/chemLogo.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

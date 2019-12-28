@@ -2,14 +2,14 @@
 	width: 85%;
 	padding: 0 10% 0 5%;
 	height: 50px;
-	background-color: rgb(98, 63, 153);
+	background-color: var(--purple);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
 .header-logo {
-	color: rgb(255, 194, 14);
+	color: var(--yellow);
 	font-size: 20px;
 }
 
@@ -24,6 +24,10 @@
 	color: white;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.header-link:hover, .header-link:active {
+	color: var(--yellow);
 }
 
 

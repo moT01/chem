@@ -1,38 +1,39 @@
-#main-courses {
+#teaching-courses {
 	text-align: center;
 }
 
-.main-course-row {
+.teaching-course-row {
 	text-align: left;
-	color: rgb(81, 38, 152);
+	color: var(--purple);
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid #e2e2e2;
+	border-bottom: 1px solid var(--gray-02);
 	text-decoration: none;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: calc(12px + .2vw);
+	font-weight: bold;
 	padding: calc(5px + .2vw) calc(10px + .2vw);
 }
 
-.main-course-row:last-child {
+.teaching-course-row:last-child {
 	border-bottom: 0px;
 }
 
-.main-course-row:hover, .main-course-row:active {
-	background-color: #e2e2e2;
+.teaching-course-row:hover, .main-course-row:active {
+	background-color: var(--gray-02);
 }
 
-.main-course-name {
+.teaching-course-name {
 	display: inline-block;
 	max-width: 74%;
 }
 
-.main-course-semester {
+.teaching-course-semester {
 	font-style: italic;
 	text-align: right;
 	font-size: calc(11px + .2vw);
+	align-self: center;
 }
 
-.main-course-pipe {
+.teaching-course-pipe {
 	color: var(--yellow);
 }
