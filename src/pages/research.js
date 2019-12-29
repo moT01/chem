@@ -2,11 +2,14 @@ import React from 'react';
 
 import Layout from '../components/layout/layout';
 import Publications from '../components/publications';
+import ResearchInterests from '../components/researchInterests';
+import Students from '../components/students';
 
 const ResearchPage = () => (
   <Layout>
-		<h2>Research Page</h2>
+    <ResearchInterests />
     <Publications />
+    <Students />
   </Layout>
 );
 

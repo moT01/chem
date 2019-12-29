@@ -21,12 +21,15 @@ const Publications = () => {
   `);
 	
 	const richText = data.allContentfulPublicationList.edges[0].node.childContentfulPublicationListListRichTextNode.childContentfulRichText.html || null;
-	const publicationList = richText.replace(/<a/g, '<a rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" target="_blank"');
+	const publicationList = richText
+		.replace(/<a/g, '<a rel="noopener noreferrer" target="_blank"')
+		.replace(/&lt;/g, '<')
+		.replace(/&gt;/g, '>');
 
   return (
 		<>
       <section id='publications'>
-        <h2>Publications</h2>
+        <h2 className='publications-heading'>Publications</h2>
 
 				{publicationList !== null ? (
           <div className='publications-content' dangerouslySetInnerHTML={{ __html: publicationList }} />

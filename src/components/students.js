@@ -1,9 +1,9 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+// import { useStaticQuery, graphql } from 'gatsby';
 
 import './students.css';
 
-const Student = () => {
+const Students = () => {
   /*const data = useStaticQuery(graphql`
     query PublicationsQuery {
 			allContentfulPublicationList {
@@ -25,8 +25,8 @@ const Student = () => {
 */
   return (
 		<>
-      <section id='publications'>
-        <h2>Publications</h2>
+      <section id='students'>
+        <h2 className='students-heading'>Students</h2>
 
 				{/*publicationList !== null ? (
           <div className='publications-content' dangerouslySetInnerHTML={{ __html: publicationList }} />

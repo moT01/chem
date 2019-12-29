@@ -28,8 +28,10 @@
   --dark-purple: rgb(65, 0, 128); /* #400080 */
   --yellow: rgb(255, 200, 46); /* #ffc72e */
   --light-yellow: rgb(255, 222, 0); /* #ffdd00 */
-  --gray-01: #e6e6e6;
-  --gray-02: #ccc;
+  --gray-01: #f2f2f2;
+  --gray-02: #e6e6e6;
+  --gray-03: #d9d9d9;
+  --gray-04: #cccccc;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.75;
 }
