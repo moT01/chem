@@ -30,18 +30,11 @@
   --light-yellow: rgb(255, 222, 0); /* #ffdd00 */
   --gray-01: #e6e6e6;
   --gray-02: #ccc;
-    font-family: 'Ubuntu-Regular';
-    font-weight: bold;
+    font-family: Helvetica, Arial, sans-serif;
     line-height: 1.75;
 }
 
-html {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
 body {
-  background-color: var(--gray-01);
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -51,20 +44,7 @@ body {
 }
 
 .content-wrap {
-  margin: 0 200px 0 200px;
-  padding: 50px 0 120px 0;
-}
-
-@media (max-width: 1000px) {
-  .content-wrap {
-    margin: 0 50px 0 50px;
-  }
-}
-
-@media (max-width: 500px) {
-  .content-wrap {
-    margin: 0 5px 0 5px;
-  }
+  padding-bottom: 150px;
 }
 /* /LAYOUT */
 
@@ -74,10 +54,9 @@ a {
   color: var(--purple);
 }
 
-h1, h2, h3, h4, h5, h6, .h7 {
-	margin: 1vw 0;
+h1, h2, h3, h4, h5, h6, .h7, .h8 {
+	margin: 0 0;
 	padding: 0 0;
-	font-family: 'Ubuntu-light';
 	font-weight: 100;
 }
 
@@ -90,11 +69,11 @@ h2 {
 }
 
 h3 {
-	font-size: calc(14px + 1.5vw);
+	font-size: calc(15px + 1.6vw);
 }
 
 h4 {
-	font-size: calc(14px + 1.2vw);
+	font-size: calc(14px + 1.4vw);
 }
 
 h5 {
@@ -108,7 +87,13 @@ h6 {
 .h7 {
   font-size: calc(11px + 0.8vw);
 }
+.h8 {
+  font-size: calc(10px + 0.6vw);
+}
 
+.pipe {
+  color: var(--yellow);
+}
 
 /*article,
 aside,

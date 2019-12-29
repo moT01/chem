@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import Header from './header';
+import Nav from './nav';
 import Footer from './footer';
 import chemLogo from '../../assets/icons/chemLogo.svg';
 import './layout.css';
@@ -10,20 +10,18 @@ const Layout = ({children}) => {
   return (
     <>
       <Helmet
-        title='&lrm;'
+        title='Joseph E. Mondloch'
         link={[
           { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${chemLogo}` }
         ]}
       >
       </Helmet>
 
-      <div className='page-wrap'>
-        <Header />
-          <div className='content-wrap'>
-            {children}
-          </div>
-        <Footer />
-      </div>
+      <Nav />
+        <div className='content-wrap'>
+          {children}
+        </div>
+      <Footer />
     </>
   )
 }

@@ -9,8 +9,7 @@
 	justify-content: space-between;
 	border-bottom: 1px solid var(--gray-02);
 	text-decoration: none;
-	font-size: calc(12px + .2vw);
-	font-weight: bold;
+	font-size: calc(12px + .8vw);
 	padding: calc(5px + .2vw) calc(10px + .2vw);
 }
 
@@ -30,10 +29,6 @@
 .teaching-course-semester {
 	font-style: italic;
 	text-align: right;
-	font-size: calc(11px + .2vw);
+	font-size: calc(11px + .6vw);
 	align-self: center;
-}
-
-.teaching-course-pipe {
-	color: var(--yellow);
 }

@@ -28,7 +28,8 @@ const TeachingPage = () => {
       classTitle: edge.node.classTitle,
       semester: edge.node.semester
     };
-  }).sort((courseA, courseB) => { 
+  }).sort((courseA, courseB) => {
+    // sort the courses by the classCode (e.g. "Chem 101")
     return courseA.classCode < courseB.classCode ? -1 : courseA.classCode > courseB.classCode ? 1 : 0 
   });
 
@@ -40,7 +41,7 @@ const TeachingPage = () => {
           <Link to={course.id} className='teaching-course-row' key={index}>
             <span className='teaching-course-name'>
               {course.classCode}&nbsp;&nbsp;
-              <span className='teaching-course-pipe'>|</span>
+              <span className='pipe'>|</span>
               &nbsp;&nbsp;{course.classTitle}
             </span>
             <span className='teaching-course-semester'>{course.semester}</span>
