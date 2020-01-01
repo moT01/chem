@@ -9,8 +9,10 @@
 }
 
 .nav-logo {
-	margin-left: 5vw;
+	width: 30%;
+	height: 100%;
 	color: var(--yellow);
+	background-color: var(--yellow);
 	font-size: 20px;
 }
 

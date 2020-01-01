@@ -5,7 +5,7 @@ import './nav.css'
 
 const Nav = () => (
 	<nav className='nav-wrap'>
-		<div className='nav-logo'>LOGO</div>
+		<div className='nav-logo'></div>
 		<div className='nav-links-wrap'>
 			<Link className='nav-link' to='/'>Home</Link>
 			<Link className='nav-link' to='/teaching'>Teaching</Link>
