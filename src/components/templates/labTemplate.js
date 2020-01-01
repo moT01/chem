@@ -16,24 +16,26 @@ class LabTemplate extends Component {
 
     return (
       <Layout>
-        <h2>{title}</h2>
-        <h2>{date}</h2>
+				<section id='labTemplate-section'>
+					<h2 >{title}</h2>
+					<h2>{date}</h2>
 
-        {/*pdfContent !== null ? (
-          <iframe src={pdfContent[0].file.url} className='pdf-content'></iframe>
-        ) : null*/}
+					{/*pdfContent !== null ? (
+						<iframe src={pdfContent[0].file.url} className='pdf-content'></iframe>
+					) : null*/}
 
-        {pdfContent !== null ? (
-          <h2>
-            <a href={'https://' + pdfContent[0].file.url} target='_blank' rel='noopener noreferrer'>
-              View Lab
-            </a>
-          </h2>
-        ) : null}
+					{pdfContent !== null ? (
+						<h2>
+							<a href={'https://' + pdfContent[0].file.url} target='_blank' rel='noopener noreferrer'>
+								View Lab
+							</a>
+						</h2>
+					) : null}
 
-        {htmlContent !== null ? (
-          <div dangerouslySetInnerHTML={{ __html: htmlContent.childContentfulRichText.html }} />
-        ) : null}
+					{htmlContent !== null ? (
+						<div dangerouslySetInnerHTML={{ __html: htmlContent.childContentfulRichText.html }} />
+					) : null}
+				</section>
       </Layout>
     )
   }
