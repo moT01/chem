@@ -1,5 +1,9 @@
 #teaching-courses {
-	text-align: center;
+	margin-bottom: 2.5vw;
+}
+
+.teaching-courses-wrap {
+	margin: 0 5vw 5vw 5vw;
 }
 
 .teaching-course-row {
@@ -14,7 +18,7 @@
 }
 
 .teaching-course-row:last-child {
-	border-bottom: 0px;
+	border-bottom: 0;
 }
 
 .teaching-course-row:hover, .main-course-row:active {
@@ -30,5 +34,5 @@
 	font-style: italic;
 	text-align: right;
 	font-size: calc(11px + .6vw);
-	align-self: center;
+	align-self: end;
 }

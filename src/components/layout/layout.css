@@ -97,6 +97,13 @@ h6 {
   color: var(--yellow);
 }
 
+.section-heading {
+	display: inline-block;
+	padding: 0 5vw 0 5vw;
+	margin-bottom: 3.5vw;
+	border-bottom: 0.5vw solid var(--purple);
+}
+
 /*article,
 aside,
 details,

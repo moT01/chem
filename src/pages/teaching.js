@@ -36,17 +36,19 @@ const TeachingPage = () => {
   return (
     <Layout>
       <section id='teaching-courses'>
-        <h2>Courses</h2>
-        {courses.map((course, index) => (
-          <Link to={course.id} className='teaching-course-row' key={index}>
-            <span className='teaching-course-name'>
-              {course.classCode}&nbsp;&nbsp;
-              <span className='pipe'>|</span>
-              &nbsp;&nbsp;{course.classTitle}
-            </span>
-            <span className='teaching-course-semester'>{course.semester}</span>
-          </Link>
-        ))}
+        <h2 className='section-heading'>Courses</h2>
+				<div className='teaching-courses-wrap'>
+					{courses.map((course, index) => (
+						<Link to={course.id} className='teaching-course-row' key={index}>
+							<span className='teaching-course-name'>
+								{course.classCode}&nbsp;&nbsp;
+								<span className='pipe'>|</span>
+								&nbsp;&nbsp;{course.classTitle}
+							</span>
+							<span className='teaching-course-semester'>{course.semester}</span>
+						</Link>
+					))}
+				</div>
       </section>
     </Layout>
   );

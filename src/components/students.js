@@ -25,8 +25,8 @@ const Students = () => {
 */
   return (
 		<>
-      <section id='students'>
-        <h2 className='students-heading'>Students</h2>
+      <section>
+        <h2 className='section-heading'>Students</h2>
 
 				{/*publicationList !== null ? (
           <div className='publications-content' dangerouslySetInnerHTML={{ __html: publicationList }} />

@@ -29,7 +29,7 @@ const Publications = () => {
   return (
 		<>
       <section id='publications'>
-        <h2 className='publications-heading'>Publications</h2>
+        <h2 className='section-heading'>Publications</h2>
 
 				{publicationList !== null ? (
           <div className='publications-content' dangerouslySetInnerHTML={{ __html: publicationList }} />
