@@ -31,7 +31,7 @@
 		max-width: 50%;
 	}
 
-	.index-info-wrap > h2, .index-contact {
+	.index-info-wrap > h2, .index-info-wrap > h1, .index-contact {
 		text-align: center;
 	}
 }
