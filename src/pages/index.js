@@ -9,14 +9,14 @@ const IndexPage = () => (
     <section id='index-about-section'>
       <img className='index-headshot-img' src={Headshot} alt='Doctor Joseph Mondloch' />
       <div className='index-info-wrap'>
-        <h2>Joseph E. Mondloch</h2>
-        <h6>Assistant Professor of Chemistry</h6>
-        <h6>University of Wisconsin-Stevens Point</h6>
-        <h6 className='index-contact'>
+        <h1 className='font-size-2'>Joseph E. Mondloch</h1>
+        <h2 className='font-size-6'>Assistant Professor of Chemistry</h2>
+        <h2 className='font-size-6'>University of Wisconsin-Stevens Point</h2>
+        <h2 className='index-contact font-size-6'>
           <a href='mailto:jmondloc@uwsp.edu'>jmondloc@uwsp.edu</a>
           <span className='pipe'>&nbsp; | &nbsp;</span>
           <a href='tel:7153463715'>(715)&nbsp;346-3715</a>
-        </h6>
+        </h2>
       </div>
     </section>
     <section id='index-intro-statement-section' className='h7'>

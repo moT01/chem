@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
 import Layout from '../layout/layout';
-import './labTemplate.css'
+import './labTemplate.css';
 
 class LabTemplate extends Component {
   render() {
@@ -39,7 +39,7 @@ class LabTemplate extends Component {
       </Layout>
     )
   }
-}
+};
 
 LabTemplate.propTypes = {
   data: PropTypes.shape({
@@ -75,4 +75,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

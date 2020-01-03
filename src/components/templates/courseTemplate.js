@@ -47,7 +47,7 @@ class CourseTemplate extends Component {
       </Layout>
     );
   }
-}
+};
 
 CourseTemplate.propTypes = {
   data: PropTypes.shape({
@@ -96,4 +96,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

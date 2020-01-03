@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './footer.css'
+import './footer.css';
 
 const Footer = () => (
 	<footer className='footer'>
-		<a href='https://github.com/moT01/chem' target='_blank' rel='noopener noreferrer'>
+		<a aria-label='view this repo on github' href='https://github.com/moT01/chem' target='_blank' rel='noopener noreferrer'>
 			<svg
 				width='60'
 				height='60'

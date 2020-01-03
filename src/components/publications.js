@@ -37,6 +37,6 @@ const Publications = () => {
       </section>
     </>
   );
-}
+};
 
 export default Publications;

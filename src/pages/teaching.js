@@ -36,7 +36,7 @@ const TeachingPage = () => {
   return (
     <Layout>
       <section id='teaching-courses'>
-        <h2 className='section-heading'>Courses</h2>
+        <h1 className='section-heading'>Courses</h1>
 				<div className='teaching-courses-wrap'>
 					{courses.map((course, index) => (
 						<Link to={course.id} className='teaching-course-row' key={index}>
@@ -52,6 +52,6 @@ const TeachingPage = () => {
       </section>
     </Layout>
   );
-}
+};
 
 export default TeachingPage;
