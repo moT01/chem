@@ -14,7 +14,8 @@ const Layout = ({children}) => (
 				{ rel: 'icon', type: 'image/png', sizes: '32x32', href: `${chemLogo}` }
 			]}
 		>
-		<html lang="en" />
+			<html lang='en' />
+			<meta name='description' content='A description, usually one or two sentences.' />
 		</Helmet>
 
 		<Nav />
