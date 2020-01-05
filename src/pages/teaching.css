@@ -1,38 +1,39 @@
 #teaching-courses {
-	margin-bottom: 2.5vw;
+  margin-bottom: 2.5vw;
 }
 
 .teaching-courses-wrap {
-	margin: 0 5vw 5vw 5vw;
+  margin: 0 5vw 5vw 5vw;
 }
 
 .teaching-course-row {
-	text-align: left;
-	color: var(--purple);
-	display: flex;
-	justify-content: space-between;
-	border-bottom: 1px solid var(--gray-02);
-	text-decoration: none;
-	font-size: calc(12px + .8vw);
-	padding: calc(5px + .2vw) calc(10px + .2vw);
+  text-align: left;
+  color: var(--purple);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-02);
+  text-decoration: none;
+  font-size: calc(12px + 0.8vw);
+  padding: calc(5px + 0.2vw) calc(10px + 0.2vw);
 }
 
 .teaching-course-row:last-child {
-	border-bottom: 0;
+  border-bottom: 0;
 }
 
-.teaching-course-row:hover, .main-course-row:active {
-	background-color: var(--gray-02);
+.teaching-course-row:hover,
+.main-course-row:active {
+  background-color: var(--gray-02);
 }
 
 .teaching-course-name {
-	display: inline-block;
-	max-width: 74%;
+  display: inline-block;
+  max-width: 74%;
 }
 
 .teaching-course-semester {
-	font-style: italic;
-	text-align: right;
-	font-size: calc(11px + .6vw);
-	align-self: end;
+  font-style: italic;
+  text-align: right;
+  font-size: calc(11px + 0.6vw);
+  align-self: end;
 }

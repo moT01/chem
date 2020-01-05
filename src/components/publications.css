@@ -1,36 +1,36 @@
 #publications {
-	margin-bottom: 5vw;
+  margin-bottom: 5vw;
 }
 
 .publications-content {
-	font-size: calc(11px + 0.6vw);
-	font-family: 'Times New Roman', Times, serif;
+  font-size: calc(11px + 0.6vw);
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .publications-content > ol {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   list-style: none;
-	counter-reset: my-awesome-counter;
+  counter-reset: my-awesome-counter;
 }
 
 .publications-content > ol > li {
-	counter-increment: my-awesome-counter;
-	display: flex;
-	padding: 0 5vw;
+  counter-increment: my-awesome-counter;
+  display: flex;
+  padding: 0 5vw;
 }
 
 .publications-content > ol > li:nth-child(even) {
-	background-color: var(--gray-01);
+  background-color: var(--gray-01);
 }
 
 .publications-content > ol > li::before {
-  content: counter(my-awesome-counter)'.';
-	display: block;
+  content: counter(my-awesome-counter) '.';
+  display: block;
 }
 
 .publications-content > ol > li > p {
-	margin: 0 0 0 1vw;
-	padding: 0;
-	display: inline;
+  margin: 0 0 0 1vw;
+  padding: 0;
+  display: inline;
 }
