@@ -1,42 +1,48 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import './publications.css';
+import './publications.css'
 
 const Publications = () => {
   const data = useStaticQuery(graphql`
     query PublicationsQuery {
-			allContentfulPublicationList {
-				edges {
-					node {
-						childContentfulPublicationListListRichTextNode {
-							childContentfulRichText {
-								html
-							}
-						}
-					}
-				}
-			}
+      allContentfulPublicationList {
+        edges {
+          node {
+            childContentfulPublicationListListRichTextNode {
+              childContentfulRichText {
+                html
+              }
+            }
+          }
+        }
+      }
     }
-  `);
-	
-	const richText = data.allContentfulPublicationList.edges[0].node.childContentfulPublicationListListRichTextNode.childContentfulRichText.html || null;
-	const publicationList = richText
-		.replace(/<a/g, '<a rel="noopener noreferrer" target="_blank"')
-		.replace(/&lt;/g, '<')
-		.replace(/&gt;/g, '>');
+  `)
+
+  const richText =
+    data.allContentfulPublicationList.edges[0].node
+      .childContentfulPublicationListListRichTextNode.childContentfulRichText
+      .html || null
+  const publicationList = richText
+    .replace(/<a/g, '<a rel="noopener noreferrer" target="_blank"')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
 
   return (
-		<>
-      <section id='publications'>
-        <h2 className='section-heading'>Publications</h2>
+    <>
+      <section id="publications">
+        <h2 className="section-heading">Publications</h2>
 
-				{publicationList !== null ? (
-          <div className='publications-content' dangerouslySetInnerHTML={{ __html: publicationList }} />
+        {publicationList !== null ? (
+          <div
+            className="publications-content"
+            dangerouslySetInnerHTML={{ __html: publicationList }}
+          />
         ) : null}
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Publications;
+export default Publications
