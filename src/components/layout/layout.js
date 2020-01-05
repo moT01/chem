@@ -1,29 +1,30 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
-import Nav from './nav';
-import Footer from './footer';
-import chemLogo from '../../assets/icons/chemLogo.svg';
-import './layout.css';
+import Nav from './nav'
+import Footer from './footer'
+import chemLogo from '../../assets/icons/chemLogo.svg'
+import './layout.css'
 
-const Layout = ({children}) => (
-	<>
-		<Helmet
-			title='Joseph E. Mondloch'
-			link={[
-				{ rel: 'icon', type: 'image/png', sizes: '32x32', href: `${chemLogo}` }
-			]}
-		>
-			<html lang='en' />
-			<meta name='description' content='A description, usually one or two sentences.' />
-		</Helmet>
+const Layout = ({ children }) => (
+  <>
+    <Helmet
+      title="Joseph E. Mondloch"
+      link={[
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: `${chemLogo}` },
+      ]}
+    >
+      <html lang="en" />
+      <meta
+        name="description"
+        content="A description, usually one or two sentences."
+      />
+    </Helmet>
 
-		<Nav />
-			<main className='content-wrap'>
-				{children}
-			</main>
-		<Footer />
-	</>
-);
+    <Nav />
+    <main className="content-wrap">{children}</main>
+    <Footer />
+  </>
+)
 
-export default Layout;
+export default Layout
